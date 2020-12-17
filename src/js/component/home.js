@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 //create your first component
 export function Home() {
 	const [currentTodo, setCurrentTodo] = useState("");
@@ -47,7 +44,7 @@ export function Home() {
 							onKeyPress={e => handleKeyPress(e)}
 						/>
 					</li>
-					{// some mapping here
+					{//  mapping here
 					list.map((item, index) => (
 						<li className="list-group-item" key={index}>
 							<div
